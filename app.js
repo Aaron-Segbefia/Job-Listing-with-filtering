@@ -188,6 +188,8 @@ function getJobsHTML(jobdata, filterTags=[]){
     
     `;
 
+    
+
 
    /* const id1 = document.getElementById('id1');
     const id2 = document.getElementById('id2');
@@ -275,6 +277,9 @@ function setJobsListings(filterTags){
         return acc + getJobsHTML(curr, filterTags);
     }, '');
     document.getElementById('jobs').innerHTML = jobsLists;
+    addNewFeatures();
+    addNewFeatures2();
+    addFeatures();
 }
 
 
@@ -301,6 +306,9 @@ function reset(searchContentEl){
     searchContentEl.innerHTML = '';
 
     setJobsListings();
+    /*addNewFeatures();
+    addNewFeatures2();
+    addFeatures();*/
     displaySearchWrap(false);
     toggleClass(targetEl, TAG_ACTIVE_CLASS);
 }
@@ -327,12 +335,15 @@ window.addEventListener('click', (event)=>{
     toggleClass(targetEl, TAG_ACTIVE_CLASS);
     displaySearchWrap(searchBarTags.length>0);
     setJobsListings(searchBarTags);
+    /*addNewFeatures();
+    addNewFeatures2();
+    addFeatures();*/
 });
 
 setJobsListings();
-addNewFeatures();
+/*addNewFeatures();
 addNewFeatures2();
-addFeatures();
+addFeatures();*/
 
 function addNewFeatures(){
 const id1 = document.getElementById('id1_newFeatures');

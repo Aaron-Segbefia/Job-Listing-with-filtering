@@ -261,4 +261,49 @@ height: auto;
 
 .featured, .new{ 
     display: inline-block;
+    font-family: 'League Spartan';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 14px;
+/* identical to box height, or 100% */
+
+text-align: center;
+letter-spacing: -0.107692px;
+text-transform: uppercase;
+padding-top: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+
+color: #FFFFFF;
+}
+
+.new{ 
+    background: #5CA5A5;
+    border-radius: 12px;
+    position: relative;
+    left: 15px;
+   /* width: 51px;
+    height: 24px;*/
+    }
+
+
+.featured{ 
+    background: #2B3939;
+border-radius: 12px;
+position: relative;
+left: 25px;
+}
+
+
+.attribution{ 
+    position: absolute;
+    top: 2180px;
+    left: 35%;
+    font-family: 'League Spartan';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
 }

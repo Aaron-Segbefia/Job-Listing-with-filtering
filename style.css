@@ -112,6 +112,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 22px;
 line-height: 24px;
+display: block;
 /* identical to box height, or 109% */
 
 
@@ -119,7 +120,7 @@ color: #2B3939;
 
 }
 .company{ 
-    display: block;
+    display: inline-block;
     font-family: 'League Spartan';
 font-style: normal;
 font-weight: 700;
@@ -255,5 +256,9 @@ height: auto;
     border-left-color: #5CA5A5;
     border-left-width: 5px;
     border-left-style: solid;
-    
+
+}
+
+.featured, .new{ 
+    display: inline-block;
 }

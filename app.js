@@ -170,7 +170,7 @@ function getJobsHTML(jobdata, filterTags=[]){
         <div class="job-card" id="id${jobdata.id.toString()}" data-new= ${jobdata.new} data-feauterd = "${jobdata.featured}"> 
             <div class="job-col job-col-left">
                 <img src="${jobdata.logo}" alt="${jobdata.company}" class="jobs-img">
-                <div class="info">
+                <div class="info" id="id${jobdata.id.toString()}_newFeatures">
                     <span class="company">${jobdata.company}</span>
                     <span class="title">${jobdata.position}</span>
 
@@ -189,8 +189,17 @@ function getJobsHTML(jobdata, filterTags=[]){
     `;
 
 
+   /* const id1 = document.getElementById('id1');
+    const id2 = document.getElementById('id2');
+    const newly = document.createElement('span');
+    newly.classList.add('new');
+    newly.innerHTML = "New";
+    const info = id1.document.querySelector('.job-col-left').document.querySelector('.info');
+    info.insertBefore(newly, info.children[1]);*/
 
-    //list for getting the roles levels and languages from the data given.
+
+    
+     //list for getting the roles levels and languages from the data given.
     const tagList = [ 
         jobdata.role,
         jobdata.level,
@@ -297,6 +306,8 @@ function reset(searchContentEl){
 }
 
 
+
+
 window.addEventListener('click', (event)=>{ 
     const targetEl = event.target;
     const targetText = targetEl.innerHTML.trim();
@@ -319,3 +330,18 @@ window.addEventListener('click', (event)=>{
 });
 
 setJobsListings();
+
+
+const id1 = document.getElementById('id1_newFeatures');
+const newly = document.createElement('span');
+newly.innerHTML = "New!";
+const featured = document.createElement('span');
+featured.innerHTML = "Featured";
+
+newly.classList.add("new");
+featured.classList.add("featured");
+
+
+id1.insertBefore(newly, id1.children[0].nextSibling);
+id1.insertBefore(featured, id1.children[1].nextSibling);
+

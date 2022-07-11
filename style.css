@@ -227,7 +227,7 @@ padding: 15px;
 
 #clear{ 
     position: absolute;
-height: 24px;
+/*height: 24px;*/
 left: 92.97%;
 right: 3.6%;
 top: calc(50% - 24px/2 + 1px);
@@ -243,6 +243,8 @@ text-align: right;
 letter-spacing: -0.123077px;
 border: none;
 cursor: pointer;
+width: 50px;
+height: auto;
 }
 
 #clear:hover{ 
@@ -252,5 +254,6 @@ cursor: pointer;
 #id1, #id2{ 
     border-left-color: #5CA5A5;
     border-left-width: 5px;
-    border-top-width: 5px;
+    border-left-style: solid;
+    
 }

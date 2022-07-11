@@ -167,7 +167,7 @@ function getJobsHTML(jobdata, filterTags=[]){
 
     //html elements for job cards
     let jobCardsHTML = ` 
-        <div class="job-card" id="id${jobdata.id.toString()}" data-new= "${jobdata.new}" data-feauterd = "${jobdata.featured}"> 
+        <div class="job-card" id="id${jobdata.id.toString()}" data-new= ${jobdata.new} data-feauterd = "${jobdata.featured}"> 
             <div class="job-col job-col-left">
                 <img src="${jobdata.logo}" alt="${jobdata.company}" class="jobs-img">
                 <div class="info">
@@ -187,6 +187,8 @@ function getJobsHTML(jobdata, filterTags=[]){
         </div>
     
     `;
+
+
 
     //list for getting the roles levels and languages from the data given.
     const tagList = [ 

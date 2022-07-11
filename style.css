@@ -1,309 +1,295 @@
- .search-hidden{ 
-    display: none;
-    z-index: 5;
+.search-hidden {
+  display: none;
+  z-index: 5;
 }
 
-.search{ 
-    position: absolute;
-    z-index: 5;
-    top: 120px;
-    width: 77.08%;
-    left: 11.46%;
-    background: #FFFFFF;
-box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
-border-radius: 5px;
-    
+.search {
+  position: absolute;
+  z-index: 5;
+  top: 120px;
+  width: 77.08%;
+  left: 11.46%;
+  background: #ffffff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 5px;
 }
-.close-tag{ 
-    font-family: 'League Spartan';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
+.close-tag {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 
+  /* identical to box height, or 150% */
 
-/* identical to box height, or 150% */
+  letter-spacing: -0.123077px;
 
-letter-spacing: -0.123077px;
+  color: #5ca5a5;
 
-color: #5CA5A5;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: hsl(180, 31%, 95%);
+  margin: 7.5px 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
 
-
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: hsl(180, 31%, 95%);
-    margin: 7.5px 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    position: relative;
-
-    padding-right: 45px;
-
-
+  padding-right: 45px;
 }
 
-.job-card{ 
-    width: 77.08%;
-    height: 152px;
-    /*position: absolute;
+.job-card {
+  width: 77.08%;
+  height: 152px;
+  /*position: absolute;
     left: 11.46%;*/
-    background-color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    /*margin: 24px;*/
-    position: relative;
-    /*left: 11.46%;*/
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /*margin: 24px;*/
+  position: relative;
+  /*left: 11.46%;*/
 
-    background: #FFFFFF;
-box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
-border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 5px;
 }
 
-.jobs{ 
-    position: absolute;
-    top: 156px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    column-gap: 24px;
-    height: calc(2088px - 156px);
-    justify-items: center;
-    align-items: center;
-    /*align-content: center;*/
-    
-    gap: 24px;
-    padding-top: 76px;
-    padding-bottom: 120px;
+.jobs {
+  position: absolute;
+  top: 156px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  column-gap: 24px;
+  height: calc(2088px - 156px);
+  justify-items: center;
+  align-items: center;
+  /*align-content: center;*/
+
+  gap: 24px;
+  padding-top: 76px;
+  padding-bottom: 120px;
 }
 
-.info{ 
-    /*display: flex;
+.info {
+  /*display: flex;
     flex-direction: column;*/
-    /*width: 23.60%;*/
-    height: 4.26%;
-    /*column-gap: 10px;*/
-
+  /*width: 23.60%;*/
+  height: 4.26%;
+  /*column-gap: 10px;*/
 }
-.info ul{ 
-    display: flex;
-    list-style-type: none;
-    gap: 41px;
-    flex-direction: row;
-    /*justify-content: flex-start;
+.info ul {
+  display: flex;
+  list-style-type: none;
+  gap: 41px;
+  flex-direction: row;
+  /*justify-content: flex-start;
     justify-items: flex-start;*/
-    position: relative;
-    left: -40px;
-
+  position: relative;
+  left: -40px;
 }
-.title{ 
-    position: relative;
-    top: 10px;
-    font-family: 'League Spartan';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 24px;
-display: block;
-/* identical to box height, or 109% */
+.title {
+  position: relative;
+  top: 10px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  display: block;
+  /* identical to box height, or 109% */
 
-
-color: #2B3939;
-
+  color: #2b3939;
 }
-.company{ 
-    display: inline-block;
-    font-family: 'League Spartan';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 17px;
-/* identical to box height */
+.company {
+  display: inline-block;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height */
 
-
-color: #5CA5A5;
+  color: #5ca5a5;
 }
 
-
-
-.job-col-left{ 
-    /*position: absolute;
+.job-col-left {
+  /*position: absolute;
     right: 62.7%;*/
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
-.jobs-img{ 
-    height: 88px;
-    width: 88px;
-    /*position: absolute;
+.jobs-img {
+  height: 88px;
+  width: 88px;
+  /*position: absolute;
     left: 40px;*/
 }
 
-.job-col-right{ 
-    /*position: absolute;
-    right: 40px;*/    
-    display: flex;
-    gap: 16px;
+.job-col-right {
+  /*position: absolute;
+    right: 40px;*/
+  display: flex;
+  gap: 16px;
 }
 
-header{ 
-    width: 100%;
-    height: 156px;
-    background: #5CA5A5;
-    background-image: url('./images/bg-header-desktop.svg');
-    margin: 0%;
-    padding: 0%;
+header {
+  width: 100%;
+  height: 156px;
+  background: #5ca5a5;
+  background-image: url("./images/bg-header-desktop.svg");
+  margin: 0%;
+  padding: 0%;
 }
-body{ 
-    margin: 0%;
-}
-
-.details{ 
-    font-family: 'League Spartan';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 24px;
-/* identical to box height, or 133% */
-
-letter-spacing: -0.138462px;
-
-color: #7C8F8F;
-
-}
-.tag{ 
-    font-family: 'League Spartan';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-letter-spacing: -0.123077px;
-
-color: #5CA5A5;
-background-color: hsl(180, 31%, 95%);
-border-radius: 4px;
-cursor: pointer;
-width: auto;
-height: auto;
-padding: 15px;
+body {
+  margin: 0%;
 }
 
+.details {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
 
-.tag:hover, .tag-active {
-    background-color: #5CA5A5;
-    color: #fff;
+  letter-spacing: -0.138462px;
+
+  color: #7c8f8f;
+}
+.tag {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.123077px;
+
+  color: #5ca5a5;
+  background-color: hsl(180, 31%, 95%);
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 15px;
+}
+
+.tag:hover,
+.tag-active {
+  background-color: #5ca5a5;
+  color: #fff;
 }
 
 .close-tag::after {
-    content: "";
-    display: block;
-    width: 35px;
-    height: 100%;
-    background-color: #5CA5A5;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-image: url('./images/icon-remove.svg');
-    background-position: center;
-    background-size: 15px;
-    background-repeat: no-repeat;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  content: "";
+  display: block;
+  width: 35px;
+  height: 100%;
+  background-color: #5ca5a5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("./images/icon-remove.svg");
+  background-position: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .close-tag:hover::after {
-    background-color: #2B3939;
+  background-color: #2b3939;
 }
 
-#clear{ 
-    position: absolute;
-/*height: 24px;*/
-left: 92.97%;
-right: 3.6%;
-top: calc(50% - 24px/2 + 1px);
+#clear {
+  position: absolute;
+  /*height: 24px;*/
+  left: 92.97%;
+  right: 3.6%;
+  top: calc(50% - 24px / 2 + 1px);
 
-font-family: 'League Spartan';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-color: #5CA5A5;
-text-align: right;
-letter-spacing: -0.123077px;
-border: none;
-cursor: pointer;
-width: 50px;
-height: auto;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #5ca5a5;
+  text-align: right;
+  letter-spacing: -0.123077px;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: auto;
 }
 
-#clear:hover{ 
-    text-decoration-line: underline;
+#clear:hover {
+  text-decoration-line: underline;
 }
 
-#id1, #id2{ 
-    border-left-color: #5CA5A5;
-    border-left-width: 5px;
-    border-left-style: solid;
-
+#id1,
+#id2 {
+  border-left-color: #5ca5a5;
+  border-left-width: 5px;
+  border-left-style: solid;
 }
 
-.featured, .new{ 
-    display: inline-block;
-    font-family: 'League Spartan';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 14px;
-/* identical to box height, or 100% */
+.featured,
+.new {
+  display: inline-block;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
 
-text-align: center;
-letter-spacing: -0.107692px;
-text-transform: uppercase;
-padding-top: 7px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 3px;
+  text-align: center;
+  letter-spacing: -0.107692px;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 3px;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
-.new{ 
-    background: #5CA5A5;
-    border-radius: 12px;
-    position: relative;
-    left: 15px;
-   /* width: 51px;
+.new {
+  background: #5ca5a5;
+  border-radius: 12px;
+  position: relative;
+  left: 15px;
+  /* width: 51px;
     height: 24px;*/
-    }
-
-
-.featured{ 
-    background: #2B3939;
-border-radius: 12px;
-position: relative;
-left: 25px;
 }
 
+.featured {
+  background: #2b3939;
+  border-radius: 12px;
+  position: relative;
+  left: 25px;
+}
 
-.attribution{ 
-    position: absolute;
-    top: 2180px;
-    left: 35%;
-    font-family: 'League Spartan';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
+.attribution {
+  position: absolute;
+  top: 2180px;
+  left: 35%;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 }

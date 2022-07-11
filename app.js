@@ -330,8 +330,11 @@ window.addEventListener('click', (event)=>{
 });
 
 setJobsListings();
+addNewFeatures();
+addNewFeatures2();
+addFeatures();
 
-
+function addNewFeatures(){
 const id1 = document.getElementById('id1_newFeatures');
 const newly = document.createElement('span');
 newly.innerHTML = "New!";
@@ -344,4 +347,31 @@ featured.classList.add("featured");
 
 id1.insertBefore(newly, id1.children[0].nextSibling);
 id1.insertBefore(featured, id1.children[1].nextSibling);
+}
 
+function addNewFeatures2(){ 
+    
+    const id2 = document.getElementById('id2_newFeatures');
+    const newly = document.createElement('span');
+    newly.innerHTML = "New!";
+    const featured = document.createElement('span');
+    featured.innerHTML = "Featured";
+
+    newly.classList.add("new");
+    featured.classList.add("featured");
+
+
+    id2.insertBefore(newly, id2.children[0].nextSibling);
+    id2.insertBefore(featured, id2.children[1].nextSibling);
+
+}
+
+function addFeatures(){ 
+    const id3 = document.getElementById('id3_newFeatures');
+    const featured = document.createElement('span');
+    featured.innerHTML = "Featured";
+    featured.classList.add("featured");
+    id3.insertBefore(featured, id3.children[0].nextSibling);
+
+
+}

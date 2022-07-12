@@ -170,7 +170,7 @@ function getJobsHTML(jobdata, filterTags = []) {
     jobdata.new
   } data-feauterd = "${jobdata.featured}"> 
             <div class="job-col job-col-left">
-                <img src="${jobdata.logo}" alt="${
+                <img class = "job-img" src="${jobdata.logo}" alt="${
     jobdata.company
   }" class="jobs-img">
                 <div class="info" id="id${jobdata.id.toString()}_newFeatures">
@@ -188,6 +188,9 @@ function getJobsHTML(jobdata, filterTags = []) {
                 ${placeholder}
             </div>
         </div>
+
+
+        
     
     `;
 
@@ -277,6 +280,9 @@ function setJobsListings(filterTags) {
     return acc + getJobsHTML(curr, filterTags);
   }, "");
   document.getElementById("jobs").innerHTML = jobsLists;
+
+  
+
   addNewFeatures();
   addNewFeatures2();
   addFeatures();
@@ -377,3 +383,7 @@ function addFeatures() {
   featured.classList.add("featured");
   id3.insertBefore(featured, id3.children[0].nextSibling);
 }
+
+
+/*const att = document.querySelector('.attribution');
+document.body.lastChild = att;*/

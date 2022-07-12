@@ -291,17 +291,11 @@ html, body {
   left: 25px;
 }
 
-.attribution {
-  position: absolute;
-  top: 90%;
-  left: 35%;
-  font-family: "League Spartan";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  width: auto;
-  display: none;
+
+
+.attribution{ 
+  font-size: 11px;
+  text-align: center;
 }
 
 .details::after {

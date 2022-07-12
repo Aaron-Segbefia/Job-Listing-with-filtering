@@ -378,10 +378,10 @@ function addNewFeatures2() {
 
 function addFeatures() {
   const id3 = document.getElementById("id3_newFeatures");
-  const featured = document.createElement("span");
-  featured.innerHTML = "Featured";
-  featured.classList.add("featured");
-  id3.insertBefore(featured, id3.children[0].nextSibling);
+  const newly = document.createElement("span");
+  newly.innerHTML = "New!";
+  newly.classList.add("new");
+  id3.insertBefore(newly, id3.children[0].nextSibling);
 }
 
 

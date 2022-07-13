@@ -177,7 +177,7 @@ function getJobsHTML(jobdata, filterTags = []) {
                     <span class="company">${jobdata.company}</span>
                     <span class="title">${jobdata.position}</span>
 
-                    <ul> 
+                    <ul class ="job-details"> 
                         <li class="details">${jobdata.postedAt} </li>
                         <li class="details">${jobdata.contract} </li>
                         <li class="details">${jobdata.location} </li>

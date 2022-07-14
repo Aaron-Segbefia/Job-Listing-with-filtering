@@ -434,8 +434,9 @@ html, body {
 
 
 .attribution{ 
-  font-size: 11px;
+  /*font-size: 11px;*/
   text-align: center;
+  display: none;
 }
 
 .details::after {

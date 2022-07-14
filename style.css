@@ -102,7 +102,7 @@ body {
   border-radius: 5px;
   background-color: hsl(180, 31%, 95%);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   color: #5ca5a5;
   margin: 7.5px 5px;
   cursor: pointer;
@@ -218,7 +218,7 @@ body {
 
 .title {
   color: #2b3939;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   display: block;
   margin-bottom: 15px;
@@ -238,7 +238,7 @@ body {
 
 .company {
   color: #40A5A4;
-  font-size: 14px;
+  font-size: 18px;
   display: inline-block;
   font-weight: 700;
   margin-bottom: 15px;
@@ -310,7 +310,7 @@ html, body {
 .details {
   display: inline-block;
   color:  #7c8f8f;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 
@@ -526,6 +526,17 @@ html, body {
     margin-bottom: 20px;
 }
 
+.title{ 
+  font-size: 15px;
+}
+
+.company{
+  font-size: 13px;
+}
+
+.details{ 
+  font-size: 16px;
+}
 
 
 }

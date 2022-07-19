@@ -154,25 +154,25 @@ const SEARCH_HIDDEN_CLASS = "search-hidden";
 const CLOSE_TAG_CLASS = "close-tag";
 const TAG_CLASS = "tag";
 
+
+
 function getHTMLTag(tag, tagClasses) {
   return `<span class= "${tagClasses}"> 
             ${tag}
     </span>`;
 }
 
-//function for created html elements for job cards
+//function for creating html elements for job cards
 function getJobsHTML(jobdata, filterTags = []) {
   const placeholder = "//JOB_TAGS";
 
   //html elements for job cards
   let jobCardsHTML = ` 
-        <div class="job-card" id="id${jobdata.id.toString()}" data-new= ${
-    jobdata.new
-  } data-feauterd = "${jobdata.featured}"> 
+        <div class="job-card" id="id${jobdata.id.toString()}" data-new= ${jobdata.new
+    } data-feauterd = "${jobdata.featured}"> 
             <div class="job-col job-col-left">
-                <img class = "job-img" src="${jobdata.logo}" alt="${
-    jobdata.company
-  }" class="jobs-img">
+                <img class = "job-img" src="${jobdata.logo}" alt="${jobdata.company
+    }" class="jobs-img">
                 <div class="info" id="id${jobdata.id.toString()}_newFeatures">
                     <span class="company">${jobdata.company}</span>
                     <span class="title">${jobdata.position}</span>
@@ -193,6 +193,7 @@ function getJobsHTML(jobdata, filterTags = []) {
         
     
     `;
+
 
   /* const id1 = document.getElementById('id1');
     const id2 = document.getElementById('id2');
@@ -274,6 +275,10 @@ function getSearchBarTags(tagValue, searchContentEl) {
   return searchBarTags;
 }
 
+
+
+
+
 //function to populate the job div in the document with the job cards
 function setJobsListings(filterTags) {
   const jobsLists = jobsListings.reduce((acc, curr) => {
@@ -281,11 +286,11 @@ function setJobsListings(filterTags) {
   }, "");
   document.getElementById("jobs").innerHTML = jobsLists;
 
-  
-
   addNewFeatures();
   addNewFeatures2();
   addFeatures();
+
+ 
 }
 
 function displaySearchWrap(display = false) {
@@ -315,15 +320,20 @@ function reset(searchContentEl) {
     addFeatures();*/
   displaySearchWrap(false);
   toggleClass(targetEl, TAG_ACTIVE_CLASS);
+
+
+  
 }
 
 window.addEventListener("click", (event) => {
+
+
   const targetEl = event.target;
   const targetText = targetEl.innerHTML.trim();
   const searchContentEl = document.getElementById("search-content");
   const searchBarTags = getSearchBarTags(targetText, searchContentEl);
 
-  if (targetEl.id === "clear" || !searchBarTags.length) {
+try{  if (targetEl.id === "clear" || !searchBarTags.length) {
     reset(searchContentEl);
     return;
   }
@@ -341,9 +351,15 @@ window.addEventListener("click", (event) => {
   /*addNewFeatures();
     addNewFeatures2();
     addFeatures();*/
-});
+}catch(err){ 
+  return;
+}});
 
 setJobsListings();
+/*addNewFeatures();
+  addNewFeatures2();
+  addFeatures();*/
+
 /*addNewFeatures();
 addNewFeatures2();
 addFeatures();*/
@@ -383,6 +399,7 @@ function addFeatures() {
   newly.classList.add("new");
   id3.insertBefore(newly, id3.children[0].nextSibling);
 }
+
 
 
 /*const att = document.querySelector('.attribution');
